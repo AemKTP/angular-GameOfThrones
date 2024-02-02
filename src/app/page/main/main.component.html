@@ -1,16 +1,108 @@
-<body>
-    <mat-toolbar>
-        <div>
-            <img src="https://ng-hw-1.firebaseapp.com/assets/images/icon.png" alt="Logo" height="50px">
-        </div>
-        <div>
-            <span>Game of Thrones</span>
-        </div>
-        <div>
-            <button>
-                <span>Home</span>
-            </button>
-        </div>
-    </mat-toolbar>
-    
-</body>
+<div class="body">
+  <mat-toolbar>
+    <div class="center">
+      <img
+        src="https://ng-hw-1.firebaseapp.com/assets/images/icon.png"
+        alt="Logo"
+        height="50px"
+      />
+      <span style="font-size: 32px">Game of Thrones</span>
+    </div>
+    <div class="center" style="width: 100%; justify-content: end">
+      <button mat-button class="padding" style="color: yellow">Home</button>
+      <button mat-button class="padding" style="color: yellow">Story</button>
+      <button mat-button class="padding" style="color: yellow">Episodes</button>
+      <button mat-button class="padding" style="color: yellow">Videos</button>
+      <!-- <button mat-button style="color: white" routerLink="lg" >Log out</button> -->
+      <button mat-button style="color: yellow" routerLink="/">Log out</button>
+    </div>
+  </mat-toolbar>
+
+  <div class="container">
+    <div class="flex">
+      <div class="center">
+        <img
+          src="https://ng-hw-1.firebaseapp.com/assets/images/photo.jpg"
+          alt="picture-1"
+        />
+      </div>
+      <div class="font-size" style="margin-left: 8%">
+        <h3>Daenerys Targaryen</h3>
+        <hr />
+        <p>Character</p>
+        <p>
+          Daenerys Targaryen is the daughter of King Aerys II Targaryen (also
+          referred to as "The Mad King") and his sister-wife Queen Rhaella, and
+          is one of the last survivors of House Targaryen. She serves as the
+          third-person point-of-view character of 31 chapters of A Game of
+          Thrones, A Clash of Kings, A Storm of Swords, and A Dance with
+          Dragons. This makes her the series' fourth most prominent narrative
+          voice after Tyrion Lannister, Jon Snow and Arya Stark.
+        </p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="center">
+        <!-- <iframe
+          src="https://www.youtube.com/embed/Ydi80YrCnPY"
+          height="315"
+          width="560"
+          frameborder="0"
+          allowfullscreen
+        ></iframe> -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Ydi80YrCnPY"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+          style="border-style: none; margin-top: 0%"
+        ></iframe>
+      </div>
+      <div class="font-size" style="margin-left: 8%">
+        <p>Personality</p>
+        <p>
+          Daenerys is most often described as uncommonly beautiful, with long,
+          pale silver-gold hair and purple eyes. She is slender and pale,
+          although taller than some of her female ancestors. Tales of Daenerys's
+          beauty are numerous, and throughout the novels she encounters
+          countless suitors who seek her hand in marriage, sometimes to gain
+          control of her three dragons. She is fluent in the Common Tongue of
+          Westeros, Dothraki, High Valyrian and bastard Valyrian, which she
+          speaks with a Tyroshi accent. Over the course of the first three
+          novels she becomes fluent in the Dothraki language and Ghiscari,
+          spoken in the slave cities in Essos.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <p>Comment</p>
+      <mat-form-field appearance="outline" class="example-in-field">
+        <mat-label style="color: white">What do you feel about this?</mat-label>
+        <textarea
+          matInput
+          placeholder="Ex. It makes me feel..."
+          rows="3"
+        ></textarea>
+      </mat-form-field>
+    </div>
+    <div class="center" style="justify-content: space-between">
+      <div>
+        <button matRipple class="favorite click" style="color: #607d8b">
+          <span>
+            <mat-icon>favorite</mat-icon>
+            <mat-icon>favorite</mat-icon>
+            <mat-icon>favorite</mat-icon>
+            <mat-icon>favorite</mat-icon>
+            <mat-icon>favorite</mat-icon>
+          </span>
+        </button>
+      </div>
+      <button mat-button style="color: white; background-color: #424242">
+        Send
+      </button>
+    </div>
+  </div>
+</div>

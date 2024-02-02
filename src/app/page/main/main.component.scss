@@ -1,7 +1,58 @@
-body{
+.body{
+    width: 100%;
+    height: 100%;
     background-color: #282828;
+    color: yellow;
+    height: 90hv;
+}
+.padding{
+    padding: 0 16px;
+    margin-right: 1.6%;
+    cursor: pointer;
+}
+.font-size{
+    font-size: 15px;
+}
+mat-form-field{
+    width: 100%;
+    height: 118px;
 }
 mat-toolbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 1%;
+    height: 6%;
     background-color: #212121;
-    color: white;
+    color: yellow;
 }
+.example-in-field textarea::placeholder{
+    color: gray; 
+    
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.flex{
+    margin-block: 1.5%;
+    display: flex;
+}
+.favorite{
+    display: flex;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+* {
+    --mdc-outlined-text-field-outline-color: white !important;
+    --mdc-outlined-text-field-hover-outline-color: white !important;
+    --mdc-outlined-text-field-focus-outline-color: white !important;
+    --mdc-outlined-text-field-input-text-color: white !important;
+  }
